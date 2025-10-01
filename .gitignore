@@ -1,0 +1,28 @@
+# Node & build artifacts
+node_modules/
+*.vsix
+*.tgz
+npm-debug.log*
+yarn-error.log
+
+# TypeScript build outputs
+**/*.js.map
+
+# Local task keys / secrets
+CustomAzureWebAppContainerDeploymentTask/.taskkey
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Coverage / test
+coverage/
+
+# Logs
+*.log
+
+# Do not ignore the lockfile
+!CustomAzureWebAppContainerDeploymentTask/package-lock.json

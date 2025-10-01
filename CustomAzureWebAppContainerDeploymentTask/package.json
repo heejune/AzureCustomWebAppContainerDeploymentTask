@@ -1,0 +1,40 @@
+{
+  "name": "custom-azure-webapp-container-deploy",
+  "version": "1.0.0",
+  "description": "Fork of AzureWebAppContainerV1 task with added UseLinuxContainer override parameter.",
+  "main": "azurermwebappdeployment.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "echo 'No linter configured'",
+    "package": "npm run build && tfx extension create --manifest-globs ../vss-extension.json",
+    "clean": "rimraf **/*.js **/*.js.map || echo clean",
+    "test": "echo \"No tests defined (upstream parity).\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heejune/AzureCustomWebAppContainerDeploymentTask.git"
+  },
+  "author": "Heejune (fork) | Original: Microsoft Corporation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heejune/AzureCustomWebAppContainerDeploymentTask/issues"
+  },
+  "homepage": "https://github.com/heejune/AzureCustomWebAppContainerDeploymentTask#readme",
+  "dependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^20.3.1",
+    "@types/q": "1.0.7",
+    "@types/uuid": "^8.3.0",
+    "agent-base": "6.0.2",
+    "azure-devops-node-api": "11.2.0",
+    "azure-pipelines-task-lib": "4.11.0",
+    "azure-pipelines-tasks-azure-arm-rest": "3.259.2",
+    "azure-pipelines-tasks-webdeployment-common": "^4.257.0",
+    "moment": "^2.29.4",
+    "q": "1.4.1",
+    "xml2js": "^0.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}

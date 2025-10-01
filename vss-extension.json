@@ -1,0 +1,70 @@
+{
+    "manifestVersion": 1,
+    "id": "custom-azure-webapp-container-deploy",
+    "name": "Custom Azure Web App Container Deploy",
+    "version": "1.0.0",
+    "publisher": "Heejune",
+    "description": "Fork of AzureWebAppContainerV1 with an added UseLinuxContainer boolean to force linuxFxVersion handling.",
+    "public": false,
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "CustomAzureWebAppContainerDeploymentTask/icon.png"
+    },
+    "files": [
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/task.json"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/task.loc.json"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/azurermwebappdeployment.js"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/azurermwebappdeploymentprovider.js"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/taskparameters.js"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/icon.png"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/Strings"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/operations"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/package.json"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/ThirdPartyNotices.txt"
+        },
+        {
+            "path": "CustomAzureWebAppContainerDeploymentTask/node_modules"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "CustomAzureWebAppContainerDeploymentTask",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "CustomAzureWebAppContainerDeploymentTask"
+            }
+        }
+    ],
+    "galleryFlags": [
+        "Preview"
+    ]
+}
